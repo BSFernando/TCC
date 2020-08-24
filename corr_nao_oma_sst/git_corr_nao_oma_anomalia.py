@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from statsmodels.tsa.filters import hp_filter
 
 tabela = pd.read_excel("C:/Users/User/tabela_meses_anomalia_nao_oma.xlsx")
 tabela = pd.DataFrame(tabela)
