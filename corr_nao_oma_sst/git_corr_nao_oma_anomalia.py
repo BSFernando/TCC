@@ -1,14 +1,8 @@
 import pandas as pd
 import numpy as np
-import os
-os.environ['PROJ_LIB'] = r'C:\Users\User\Anaconda3\pkgs\proj4-5.2.0-ha925a31_1\Library\share'    
 import matplotlib.pyplot as plt
-import time
-from statsmodels.tsa.filters import hp_filter
 
-start = time.time()
-
-tabela = pd.read_excel("C:/Users/User/Downloads/github/tabela_meses_anomalia_nao_oma.xlsx")
+tabela = pd.read_excel("C:/Users/User/tabela_meses_anomalia_nao_oma.xlsx")
 tabela = pd.DataFrame(tabela)
 
 datas = list(range(-2017, -1986,1)) + list(range(1986, 2018,1))
@@ -58,18 +52,21 @@ media_f = hp_filter.hpfilter(tabela["Media"],129600)
 
 
 a = plt.figure(figsize = (45,18))
+
 a.add_subplot(3,1,1)
 plt.plot(tabela["Media"]/tabela["Media"].max(), label = "SST Anomaly", c = "k")
 plt.plot(media_f[1]/media_f[1].max(), label = "HP filter", c = "grey", linewidth = 10)
 plt.yticks(np.arange(-1,1.1,0.5), size = 30)
 plt.xticks(range(0,373,12), labels = [], size = 30, rotation = 45)
 plt.legend(fontsize = 20, loc = 2)
+
 a.add_subplot(3,1,2)
 plt.plot(tabela["OMA"]/tabela["OMA"].max(), label = "AMO", c = "k")
 plt.plot(oma_f[1]/oma_f[1].max(), label = "HP filter", c = "grey", linewidth = 10)
 plt.yticks(np.arange(-1,1.1,0.5), size = 30)
 plt.xticks(range(0,373,12), labels = [], size = 30, rotation = 45)
 plt.legend(fontsize = 20, loc = 2)
+
 a.add_subplot(3,1,3)
 plt.plot(tabela["NAO"]/(-1* tabela["NAO"].min()), label = "NAO", c = "k")
 plt.plot(nao_f[1]/nao_f[1].max(), label = "HP filter", c = "grey", linewidth = 10)
