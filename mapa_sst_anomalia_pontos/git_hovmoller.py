@@ -11,7 +11,7 @@ lista = []
     
 for ano in total:
     
-    file = np.load('C:/Users/User/Downloads/github/anomalia_%s_total.npy' % str(ano))
+    file = np.load('C:/anomalia_%s_total.npy' % str(ano))
     file = file[::-1]
     file = file[188:208,1180:1220]
     file = file[::-1]
