@@ -3,7 +3,7 @@ import numpy as np
 import netCDF4 as n4
 
 anos = list(range(1987, 2018))
-nome = 'C:/Users/User/sst.day.mean.1987.nc'     
+nome = 'C:/sst.day.mean.1987.nc'     
 sst_0 = n4.Dataset(nome)
 sst_0 = sst_0.variables['sst'][0,:,:]
 sst_0 = sst_0 * 0
@@ -13,7 +13,7 @@ for v in anos:
     sstf = sst_0 * 0
     contador = 0
     
-    nc_file = 'C:/Users/User/sst.day.mean.%s.nc' % str(v)
+    nc_file = 'C:/sst.day.mean.%s.nc' % str(v)
     ano_data = n4.Dataset(nc_file)
     data = ano_data.variables['time']
 
@@ -25,4 +25,4 @@ for v in anos:
         
     sstf = sstf/len(data)
     sstf = pd.DataFrame(sstf)
-    np.save(('C:/Users/User/media_%s_total.npy' % str(v)), sstf)
+    np.save(('C:/media_%s_total.npy' % str(v)), sstf)
