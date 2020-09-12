@@ -7,14 +7,14 @@ tabela = pd.DataFrame(tabela)
 total = list(range(1987, 2018))
 meses = ['jan','fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
 
-oma = np.loadtxt('C:/Users/User/amo.txt')
+oma = np.loadtxt('C:/amo.txt')
 oma = pd.DataFrame(oma)
 oma.index = oma[0]
 oma = oma.drop(columns = 0)
 oma = oma[(oma.index > 1986) & (oma.index < 2018)]
 oma.columns = meses
 
-nao = np.loadtxt('C:/Users/User/norm.nao.monthly.txt')
+nao = np.loadtxt('C:/norm.nao.monthly.txt')
 nao = pd.DataFrame(nao)
 nao.index = nao[0]
 nao = nao.drop(columns = 0)
@@ -27,7 +27,7 @@ for ano in total:
     
     for mes in meses:
     
-        file = np.load('C:/Users/User/anomalia_%s_%s.npy' % (str(mes), str(ano)))
+        file = np.load('C:/anomalia_%s_%s.npy' % (str(mes), str(ano)))
         file = file[::-1]
         file = file[188:208,1180:1220]
         file = file[::-1]
@@ -42,5 +42,5 @@ for ano in total:
         
         z = z + 1
 
-tabela.to_excel("C:/Users/User/tabela_meses_anomalia_nao_oma.xlsx")
+tabela.to_excel("C:/tabela_meses_anomalia_nao_oma.xlsx")
   
