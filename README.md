@@ -1,5 +1,3 @@
-# my_tcc
-
 <h4>Posição espacial de uma espécie de tubarão no oceano Atlântico Norte (esferas rosas) junto ao centroide dos agrupamentos (simbolo + preto). Valores de TSM e anomalia da TSM.</h4>
 
 <img src="https://github.com/BSFernando/my_tcc/blob/master/img/tsm_centroide_pontos_6mapas.png" alt="alt text" width="600px">
