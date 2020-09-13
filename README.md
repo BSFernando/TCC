@@ -9,7 +9,7 @@
 
 <img src="https://github.com/BSFernando/my_tcc/blob/master/img/hovmoller.png" alt="alt text" width="600px">
 
-<h4>Indices respectivos a anomalia da TSM,  e Oscilação Multidecadal do Atlântico.</h4>
+<h4>Indices respectivos a anomalia da TSM, Oscilação Multidecadal do Atlântico e Oscilação do Atlântico Norte.</h4>
 
 <img src="https://github.com/BSFernando/my_tcc/blob/master/img/3_plots.png" alt="alt text" width="600px">
 
