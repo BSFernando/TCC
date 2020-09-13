@@ -5,7 +5,7 @@
 <img src="https://github.com/BSFernando/my_tcc/blob/master/img/tsm_centroide_pontos_6mapas.png" alt="alt text" width="600px">
 <img src="https://github.com/BSFernando/my_tcc/blob/master/img/anomalia_pontos_centroide_6mapas.png" alt="alt text" width="600px">
 
-<h4>Diagram de hovmoller da variação de anomalia na região.</h4>
+<h4>Diagrama de Hovmoller da variação de anomalia na região.</h4>
 
 <img src="https://github.com/BSFernando/my_tcc/blob/master/img/hovmoller.png" alt="alt text" width="600px">
 
