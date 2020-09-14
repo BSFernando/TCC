@@ -5,7 +5,7 @@
 
 <h4>Diagrama de Hovmoller da variação de anomalia na região.</h4>
 
-<img src="https://github.com/BSFernando/my_tcc/blob/master/img/hovmoller.png" alt="alt text" width="600px">
+<img src="https://github.com/BSFernando/my_tcc/blob/master/img/hovmoller.png" alt="alt text" width="400px">
 
 <h4>Indices respectivos a anomalia da TSM, Oscilação Multidecadal do Atlântico e Oscilação do Atlântico Norte.</h4>
 
