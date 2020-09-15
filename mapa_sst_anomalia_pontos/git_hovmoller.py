@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-import os
-os.environ['PROJ_LIB'] = r'C:\Users\User\Anaconda3\pkgs\proj4-5.2.0-ha925a31_1\Library\share'    
 import matplotlib.pyplot as plt
 
 total = list(range(1987, 2018))
