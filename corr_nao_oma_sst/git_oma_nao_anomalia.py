@@ -42,5 +42,5 @@ for ano in total:
         
         z = z + 1
 
-tabela.to_excel("C:/tabela_meses_anomalia_nao_oma.xlsx")
+tabela.to_csv("C:/tabela_meses_anomalia_nao_oma.csv", index = False)
   
