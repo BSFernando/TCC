@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.filters import hp_filter
 
-tabela = pd.read_excel("C:/tabela_meses_anomalia_nao_oma.xlsx")
+tabela = pd.read_csv("C:/tabela_meses_anomalia_nao_oma.csv")
 tabela = pd.DataFrame(tabela)
 
 datas = list(range(-2017, -1986,1)) + list(range(1986, 2018,1))
